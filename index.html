@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Car Listing App</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+  </head>
+  <body>
+    <form id="new-items">
+      <div id="form-wrapper">
+
+        <div class="form-item">
+          <label for="make" class="primary">Make</label>
+          <input type="text" id="make" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="model" class="primary">Model</label>
+          <input type="text" id="model" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="bodystyle" class="primary">Bodystyle</label>
+          <select id="bodystyle">
+            <option value="" disable selected></option>
+            <option value="Saloon">Saloon</option>
+            <option value="Estate">Estate</option>
+            <option value="SUV">SUV</option>
+            <option value="Hatchback">Hatchback</option>
+            <option value="Coupe">Coupe</option>
+            <option value="Convertible">Convertible</option>
+          </select>
+        </div>
+
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+    <h1>List of Cars</h1>
+
+  </body>
+</html>
