@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
   </head>
   <body>
+    <h1>Submit a New Car to the List</h1>
     <form id="new-items">
       <div id="form-wrapper">
 
@@ -33,10 +34,36 @@
           </select>
         </div>
 
+        <!-- <div class="form-item">
+          <div>
+           <input type="radio" id="huey"
+                  name="drone" value="huey" checked />
+           <label for="huey">Huey</label>
+         </div>
+
+         <div>
+           <input type="radio" id="dewey"
+                  name="drone" value="dewey" />
+           <label for="dewey">Dewey</label>
+         </div>
+
+         <div>
+           <input type="radio" id="louie"
+                  name="drone" value="louie" />
+           <label for="louie">Louie</label>
+         </div>
+        </div> -->
+
       </div>
-      <input type="submit" value="save"/>
+      <input type="submit" value="Save"/>
     </form>
+
     <h1>List of Cars</h1>
+
+    <div id="vehicle-list">
+    </div>
+
+    <button type="button" name="button" id="delete-all">Delete All</button>
 
   </body>
 </html>
