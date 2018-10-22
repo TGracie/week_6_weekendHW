@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', handleFormSubmit);
 
   const button = document.querySelector('#delete-all');
-  button.addEventListener('click', handleButtonClick)
-
+  button.addEventListener('click', handleButtonClick);
 
 });
 
@@ -16,18 +15,18 @@ const handleFormSubmit = function (event){
   const make = document.createElement('h2');
   const model = document.createElement('h3');
   const bodystyle = document.createElement('h4');
-  // const vehicleClass = document.createElement('p');
+  const bodyStyle = document.createElement('p');
 
   make.textContent = `${this.make.value}`;
   model.textContent = `${this.model.value}`;
   bodystyle.textContent = `${this.bodystyle.value}`;
-  // vehicleClass.textContent = `${this.vehicleClass.value}`;
+  bodyStyle.textContent = `${this.bodyStyle.value}`;
 
   const result = document.querySelector('#vehicle-list');
   result.appendChild(make);
   result.appendChild(model);
   result.appendChild(bodystyle);
-  // result.appendChild(vehicleClass);
+  result.appendChild(bodyStyle);
   document.getElementById('new-items').reset()
 };
 
